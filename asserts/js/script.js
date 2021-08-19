@@ -43,3 +43,16 @@ function validaEmail() {
     }
     
 }
+
+function validaAssunto () {
+    let txtAssunto = document.querySelector('#txtAssunto')
+
+    if (assunto.value.length >= 100) {
+        txtAssunto.innerHTML = 'Texto muito grande, digite até 100 caracteres.'
+        txtAssunto.style.color = 'red'
+    }
+    else {
+        txtAssunto.innerHTML = 'Texto válido.'
+        txtAssunto.style.color = 'green'
+    }
+}
